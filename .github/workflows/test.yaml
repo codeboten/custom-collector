@@ -9,6 +9,8 @@ jobs:
       - name: Custom Collector Step
         id: custom-collector
         uses: codeboten/collector-builder-action@main
+      - if: always()
+        run: find .
       - name: Get the output file
         run: echo "The file is ${{ steps.custom-collector.outputs.file }}"
 
