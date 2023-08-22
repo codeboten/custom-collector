@@ -6,9 +6,10 @@ jobs:
     name: A job to build a custom OpenTelemetry Collector
     steps:
       - uses: actions/checkout@v3
+
       - name: Custom Collector Step
-        id: custom-collector
-        uses: codeboten/collector-builder-action@main
+        uses: codeboten/collector-builder-action@v1
+
       - uses: actions/upload-artifact@v3
         with:
           name: otelcolaction
