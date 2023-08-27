@@ -5,10 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to build a custom OpenTelemetry Collector
     steps:
-      - uses: actions/checkout@main
+      - uses: actions/checkout@v3
 
       - name: Custom Collector Step
-        uses: codeboten/collector-builder-action@v1
+        uses: codeboten/collector-builder-action@main
         with:
           architecture: "arm64"
           os: "darwin"
