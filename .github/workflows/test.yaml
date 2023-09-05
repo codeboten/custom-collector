@@ -10,4 +10,5 @@ jobs:
       - uses: codeboten/collector-builder@main
         with:
           architecture: "arm64"
-          os: "darwin"
+          os: "linux"
+          # container: "codeboten/test-collector"
