@@ -7,13 +7,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Custom Collector Step
-        uses: codeboten/collector-builder-action@main
+      - uses: codeboten/collector-builder@main
         with:
           architecture: "arm64"
           os: "darwin"
-
-      - uses: actions/upload-artifact@v3
-        with:
-          name: otelcolaction
-          path: _build/otelcolaction
