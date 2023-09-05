@@ -11,4 +11,4 @@ jobs:
         with:
           architecture: "arm64"
           os: "linux"
-          # container: "codeboten/test-collector"
+          container: "codeboten/test-collector"
